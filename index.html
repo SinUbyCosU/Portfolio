@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tanushree Yadav | Game Dev & Solar Research Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Nunito', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #003049;
+      padding: 40px 0 30px;
+      text-align: center;
+      border-bottom: 2px solid #0077b6;
+    }
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3em;
+      margin: 0 0 10px;
+      color: #ffffff;
+    }
+    header p {
+      font-size: 1.2em;
+      color: #d6e0e8;
+    }
+    nav {
+      margin-top: 15px;
+    }
+    nav a {
+      color: #90e0ef;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffffff;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+    .section {
+      padding: 60px 0;
+      border-bottom: 1px solid #ccc;
+      animation: fadeIn 0.6s ease-in;
+    }
+    h2 {
+      font-size: 2.2em;
+      margin-bottom: 25px;
+      color: #003049;
+    }
+    .project {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: flex-start;
+      margin-bottom: 40px;
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0, 119, 182, 0.2);
+    }
+    .project iframe,
+    .project img {
+      max-width: 320px;
+      max-height: 180px;
+      border-radius: 10px;
+      object-fit: contain;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .project-description {
+      max-width: 600px;
+    }
+    .project-description h3 {
+      color: #1e1e2f;
+      margin-top: 0;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 10px 20px;
+      background-color: #0077b6;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+    .btn:hover {
+      background-color: #023e8a;
+    }
+    .skills {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    .skills li {
+      background-color: #e0f7fa;
+      margin: 10px 0;
+      padding: 10px 15px;
+      border-left: 5px solid #0077b6;
+      border-radius: 5px;
+    }
+    footer {
+      background-color: #e6f1f5;
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 0.95em;
+      color: #444;
+      border-top: 2px solid #a1c4fd;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Portfolio</h1>
+    <p>IISER Bhopal | Game Developer | Solar Data Research | Mental Health Enthusiast</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="https://github.com/SinUbyCosU/WebDesign02" target="_blank">Web Dev GitHub</a>
+      <a href="https://github.com/SinUbyCosU/Game" target="_blank">Game Dev GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>Hi, I’m Tanushree Yadav, a student at the Indian Institute of Science Education and Research Bhopal (IISER Bhopal), heading into my 3rd year and planning to major in Data Science. My passion lies in using technology creatively to build games and tools that inspire, heal, and inform.</p>
+        <p>Although I haven’t yet built a mental health game, I’m very interested in exploring how games can foster reflection, safety, and emotional connection. Through this internship, I’m excited to learn how to design experiences that support mental well-being.</p>
+        <p>I’m also currently working on a solar physics research project under Prof. Nitin Yadav at IIT Delhi, where we analyze sunspots and umbral flares using data from AIA and HMI instruments—merging physics, programming, and machine learning to investigate dynamic solar behavior.</p>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+
+        <div class="project">
+          <iframe width="320" height="180" 
+            src="https://www.youtube.com/embed/3rhy1wuFat8" 
+            title="Shooting Game – Classic Arcade-Style (Pygame)" 
+            frameborder="0" allowfullscreen></iframe>
+          <div class="project-description">
+            <h3>Shooting Game – Classic Arcade-Style (Pygame)</h3>
+            <p>Dive into a retro 2D arcade-style experience. This Pygame project includes enemy AI, collision detection, and sprite animations. Built from scratch with object-oriented design and level logic.</p>
+            <a href="https://github.com/SinUbyCosU/Game/tree/main/Game1.py" class="btn" target="_blank">View on GitHub</a>
+          </div>
+        </div>
+
+        <div class="project">
+          <iframe width="320" height="180" 
+            src="https://www.youtube.com/embed/S968HppxO3o" 
+            title="Monster Battle – Boss Fights and Strategy (Pygame)" 
+            frameborder="0" allowfullscreen></iframe>
+          <div class="project-description">
+            <h3>Monster Battle – Boss Fights and Strategy (Pygame)</h3>
+            <p>A turn-based combat system featuring custom monster sprites and strategic logic. Built using Pygame with modular design, boss AI, and status effects.</p>
+            <a href="https://github.com/SinUbyCosU/Game/tree/main/Game2.py" class="btn" target="_blank">View on GitHub</a>
+          </div>
+        </div>
+
+        <div class="project">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Clone Screenshot" style="width: 300px; height: 200px;">
+          <div class="project-description">
+            <h3>Amazon Clone – Responsive Frontend (HTML/CSS)</h3>
+            <p>Fully responsive replica of Amazon’s homepage using HTML/CSS. Emphasis on layout grids, flexbox, and responsive breakpoints to simulate a real-world interface.</p>
+            <a href="https://github.com/SinUbyCosU/WebDesign02" class="btn" target="_blank">View on GitHub</a>
+          </div>
+        </div>
+
+        <div class="project">
+          <img src="Gordot.png" alt="Godot Project Screenshot">
+          <div class="project-description">
+            <h3>Godot Platformer – Level Design & GDScript</h3>
+            <p>A 2D platformer built in Godot using GDScript, featuring custom physics, tilemaps, and interactive elements. Focused on modular scene design and reusable components.</p>
+        <a href="https://github.com/SinUbyCosU/Game/tree/main/Godot%20Project/First%20Game" class="btn" target="_blank">View on GitHub</a>
+          </div>
+        </div>
+
+<section id="skills" class="section">
+  <div class="container">
+    <h2>Skills</h2>
+
+    <h3>🕹️ Game Development</h3>
+    <ul class="skills">
+      <li>Pygame – 2D Logic, Object-Oriented Design</li>
+      <li>Godot Engine – GDScript, Scene & Tilemap Design</li>
+      <li>Sprite Animation – Turn-Based & Real-Time Mechanics</li>
+    </ul>
+
+    <h3>🌐 Web Development</h3>
+    <ul class="skills">
+      <li>HTML & CSS – Responsive Layouts, Flexbox, Grid</li>
+      <li>Version Control – Git, GitHub Pages</li>
+    </ul>
+
+    <h3>💻 Programming Languages</h3>
+    <ul class="skills">
+      <li>Python – Scripting, Data Handling, Game Logic</li>
+      <li>C – Basic Algorithms & Data Structures</li>
+      <li>GDScript – Godot-specific scripting</li>
+    </ul>
+
+    <h3>🔭 Solar Data Analysis</h3>
+    <ul class="skills">
+      <li>Sunspot Detection, Umbral Flare Tracking</li>
+      <li>Image Processing – AIA & HMI Data</li>
+      <li>Scientific Libraries – SunPy, Astropy, NumPy, Matplotlib</li>
+    </ul>
+
+    <h3>🧠 Soft Skills</h3>
+    <ul class="skills">
+      <li>Creative Design Thinking</li>
+      <li>Mental Health Awareness in Tech</li>
+      <li>Team Collaboration & Scientific Communication</li>
+    </ul>
+  </div>
+</section>
+
